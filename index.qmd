@@ -1,0 +1,37 @@
+---
+title: "Basic Version Control with `Git`"
+author: "Ray Yang"
+format: revealjs
+---
+
+## What is version control
+
+Version control (also known as revision control, source control, and source code management) is the software engineering practice of controlling computer files and versions of files; primarily source code text files, but generally any type of file. ^[<https://en.wikipedia.org/wiki/Version_control>]
+
+. . .
+
+- it's a concept, and `Git` is a software
+- and [GitHub](https://github.com/) is a platform/host/server...
+
+## What is `Git`
+
+- it's a software
+- it's free and open source
+- it's the  *de facto* standard version control system but there are many more (both open and proprietary)
+- it's independent of network access or a central server
+
+
+## What is [GitHub](https://github.com/)?
+
+- it's a platform/host/server...
+- it's free but **NOT** open source
+- it's owned by Microsoft since 2018
+- there are many others, e.g., [Bitbucket](https://bitbucket.org/product), [GitLab](https://about.gitlab.com)
+
+
+## Some key commands
+
+- `git add`
+```bash
+git add <file_name>
+```
