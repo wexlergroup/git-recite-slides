@@ -33,7 +33,7 @@ Version control (also known as revision control, source control, and source code
 There are the local part and the serve part
 
 
-
+::: {#fig-simple}
 ```{dot}
 digraph {
   rankdir=LR;
@@ -55,7 +55,8 @@ digraph {
   
 }
 ```
-
+This is a simple graphviz graph
+:::
 
 
 ## Some key commands
