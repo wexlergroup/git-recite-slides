@@ -28,6 +28,35 @@ Version control (also known as revision control, source control, and source code
 - it's owned by Microsoft since 2018
 - there are many others, e.g., [Bitbucket](https://bitbucket.org/product), [GitLab](https://about.gitlab.com)
 
+## The components
+
+There are the local part and the serve part
+
+
+
+```{dot}
+digraph {
+  rankdir=LR;
+  edge [ style=dashed ];
+
+  node [ fontname="Handlee" ];
+  subgraph cluster_frontend {
+    label="your laptop";
+    "local files" -> "local repo"
+  }
+      
+  subgraph cluster_backend {
+    
+    label="the internet";
+    "online repo";
+  }
+
+  "local repo" -> "online repo";
+  
+}
+```
+
+
 
 ## Some key commands
 
