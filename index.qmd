@@ -1,7 +1,11 @@
 ---
 title: "Basic Version Control with `Git`"
+subtitle: "<https://yangmr04.github.io/git-recite-slides/>"
 author: "Ray Yang"
 format: revealjs
+  # revealjs:
+    # logo: logo.png
+    # footer: ""
 ---
 
 ## What is version control
@@ -30,24 +34,52 @@ Version control (also known as revision control, source control, and source code
 
 ## The components
 
-There are the local parts and the server part
+There are the local parts and the server part. Typically, you interact with all parts through the command line interface (CLI), which contains a set of text-based instructions.
+
+Nowadays, there are graphical user interfaces (GUIs) available for your convenience. Many integrated development environments (IDEs) also have integrated git functionalities, either built-in ot via plug-ins.
 
 
-
+## The direction of version control: `pull`
 ```{dot}
-digraph {
+digraph A {
   rankdir=LR;
   edge [ style=dashed ];
 
   // node [ fontname="Handlee" ];
   subgraph cluster_frontend {
-    label="your laptop";
+    label="Your Laptop";
+    "local files" -> "staging area" -> "local repo" [dir=back];
+  }
+      
+  subgraph cluster_backend {
+    
+    label="The Internet (origin/remote)";
+    "online repo";
+  }
+
+  "local repo" -> "online repo" [dir=back];
+  
+}
+```
+
+<span style="font-size:0.5em;">Repo: repository</span>
+
+## The direction of version control: `push`
+
+```{dot}
+digraph B {
+  rankdir=LR;
+  edge [ style=dashed ];
+
+  // node [ fontname="Handlee" ];
+  subgraph cluster_frontend {
+    label="Your Laptop";
     "local files" ->"staging area" -> "local repo";
   }
       
   subgraph cluster_backend {
     
-    label="the internet (origin/remote)";
+    label="The Internet (origin/remote)";
     "online repo";
   }
 
@@ -56,9 +88,21 @@ digraph {
 }
 ```
 
+<span style="font-size:0.5em;">Repo: repository</span>
+
+## Useful resources
+
+- Atlassian Git Tutorials <https://www.atlassian.com/git/tutorials>
+- Software Carpentry, Version Control with Git <https://swcarpentry.github.io/git-novice/>
+- Git documentation  <https://git-scm.com/docs>
+
+# Commands
+
+## Setting up a repository
 
 
-## Some key commands
+
+## To start tracking
 
 - `git add`: to stage the changes
 ```bash
@@ -71,7 +115,7 @@ git add .     # stage new and modified files
 git add -u    # stage modified and deleted files
 ```
 
-## Some key commands
+## To stage the changes
 - `git commit`: to commit the changes staged with `git add`
 ```bash
 git commit -m "some text for the commit message"

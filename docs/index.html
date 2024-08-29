@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Ray Yang">
-  <meta name="dcterms.date" content="2024-08-28">
+  <meta name="dcterms.date" content="2024-08-29">
   <title>Basic Version Control with Git</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -393,6 +393,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Basic Version Control with <code>Git</code></h1>
+  <p class="subtitle"><a href="https://yangmr04.github.io/git-recite-slides/" class="uri">https://yangmr04.github.io/git-recite-slides/</a></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -402,7 +403,7 @@ Ray Yang
 </div>
 </div>
 
-  <p class="date">2024-08-28</p>
+  <p class="date">2024-08-29</p>
 </section>
 <section id="what-is-version-control" class="slide level2">
 <h2>What is version control</h2>
@@ -434,24 +435,101 @@ Ray Yang
 </section>
 <section id="the-components" class="slide level2">
 <h2>The components</h2>
-<p>There are the local parts and the server part</p>
+<p>There are the local parts and the server part. Typically, you interact with all parts through the command line interface (CLI), which contains a set of text-based instructions.</p>
+<p>Nowadays, there are graphical user interfaces (GUIs) available for your convenience. Many integrated development environments (IDEs) also have integrated git functionalities, either built-in ot via plug-ins.</p>
+</section>
+<section id="the-direction-of-version-control-pull" class="slide level2">
+<h2>The direction of version control: <code>pull</code></h2>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg width="960" height="480" viewbox="0.00 0.00 602.78 101.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<svg width="960" height="480" viewbox="0.00 0.00 608.78 101.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97)">
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-97 598.78,-97 598.78,4 -4,4"></polygon>
+<title>A</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-97 604.78,-97 604.78,4 -4,4"></polygon>
 <g id="clust1" class="cluster">
 <title>cluster_frontend</title>
 <polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
-<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">your laptop</text>
+<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_backend</title>
-<polygon fill="none" stroke="black" points="427.28,-8 427.28,-85 594.78,-85 594.78,-8 427.28,-8"></polygon>
-<text text-anchor="middle" x="511.03" y="-68.4" font-family="Times,serif" font-size="14.00">the internet (origin/remote)</text>
+<polygon fill="none" stroke="black" points="427.28,-8 427.28,-85 600.78,-85 600.78,-8 427.28,-8"></polygon>
+<text text-anchor="middle" x="514.03" y="-68.4" font-family="Times,serif" font-size="14.00">The Internet (origin/remote)</text>
+</g>
+<!-- local files -->
+<g id="node1" class="node">
+<title>local files</title>
+<ellipse fill="none" stroke="black" cx="64.84" cy="-34" rx="48.69" ry="18"></ellipse>
+<text text-anchor="middle" x="64.84" y="-29.8" font-family="Times,serif" font-size="14.00">local files</text>
+</g>
+<!-- staging area -->
+<g id="node2" class="node">
+<title>staging area</title>
+<ellipse fill="none" stroke="black" cx="207.11" cy="-34" rx="57.34" ry="18"></ellipse>
+<text text-anchor="middle" x="207.11" y="-29.8" font-family="Times,serif" font-size="14.00">staging area</text>
+</g>
+<!-- local files&#45;&gt;staging area -->
+<g id="edge1" class="edge">
+<title>local files-&gt;staging area</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M123.82,-34C132.22,-34 140.87,-34 149.25,-34"></path>
+<polygon fill="black" stroke="black" points="123.72,-30.5 113.72,-34 123.72,-37.5 123.72,-30.5"></polygon>
+</g>
+<!-- local repo -->
+<g id="node3" class="node">
+<title>local repo</title>
+<ellipse fill="none" stroke="black" cx="349.91" cy="-34" rx="49.25" ry="18"></ellipse>
+<text text-anchor="middle" x="349.91" y="-29.8" font-family="Times,serif" font-size="14.00">local repo</text>
+</g>
+<!-- staging area&#45;&gt;local repo -->
+<g id="edge2" class="edge">
+<title>staging area-&gt;local repo</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M274.6,-34C283.21,-34 291.9,-34 300.15,-34"></path>
+<polygon fill="black" stroke="black" points="274.57,-30.5 264.57,-34 274.57,-37.5 274.57,-30.5"></polygon>
+</g>
+<!-- online repo -->
+<g id="node4" class="node">
+<title>online repo</title>
+<ellipse fill="none" stroke="black" cx="514.03" cy="-34" rx="55" ry="18"></ellipse>
+<text text-anchor="middle" x="514.03" y="-29.8" font-family="Times,serif" font-size="14.00">online repo</text>
+</g>
+<!-- local repo&#45;&gt;online repo -->
+<g id="edge3" class="edge">
+<title>local repo-&gt;online repo</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M409.89,-34C425.95,-34 443.27,-34 459.04,-34"></path>
+<polygon fill="black" stroke="black" points="409.55,-30.5 399.55,-34 409.55,-37.5 409.55,-30.5"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><span style="font-size:0.5em;">Repo: repository</span></p>
+</section>
+<section id="the-direction-of-version-control-push" class="slide level2">
+<h2>The direction of version control: <code>push</code></h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="960" height="480" viewbox="0.00 0.00 608.78 101.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97)">
+<title>B</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-97 604.78,-97 604.78,4 -4,4"></polygon>
+<g id="clust2" class="cluster">
+<title>cluster_backend</title>
+<polygon fill="none" stroke="black" points="427.28,-8 427.28,-85 600.78,-85 600.78,-8 427.28,-8"></polygon>
+<text text-anchor="middle" x="514.03" y="-68.4" font-family="Times,serif" font-size="14.00">The Internet (origin/remote)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_frontend</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
+<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
 </g>
 <!-- local files -->
 <g id="node1" class="node">
@@ -486,14 +564,14 @@ Ray Yang
 <!-- online repo -->
 <g id="node4" class="node">
 <title>online repo</title>
-<ellipse fill="none" stroke="black" cx="511.03" cy="-34" rx="55" ry="18"></ellipse>
-<text text-anchor="middle" x="511.03" y="-29.8" font-family="Times,serif" font-size="14.00">online repo</text>
+<ellipse fill="none" stroke="black" cx="514.03" cy="-34" rx="55" ry="18"></ellipse>
+<text text-anchor="middle" x="514.03" y="-29.8" font-family="Times,serif" font-size="14.00">online repo</text>
 </g>
 <!-- local repo&#45;&gt;online repo -->
 <g id="edge3" class="edge">
 <title>local repo-&gt;online repo</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M399.51,-34C414.21,-34 430.57,-34 446.11,-34"></path>
-<polygon fill="black" stroke="black" points="446.17,-37.5 456.17,-34 446.17,-30.5 446.17,-37.5"></polygon>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M399.55,-34C415.07,-34 432.5,-34 448.95,-34"></path>
+<polygon fill="black" stroke="black" points="449.04,-37.5 459.04,-34 449.04,-30.5 449.04,-37.5"></polygon>
 </g>
 </g>
 </svg>
@@ -502,9 +580,26 @@ Ray Yang
 </div>
 </div>
 </div>
+<p><span style="font-size:0.5em;">Repo: repository</span></p>
 </section>
-<section id="some-key-commands" class="slide level2">
-<h2>Some key commands</h2>
+<section id="useful-resources" class="slide level2">
+<h2>Useful resources</h2>
+<ul>
+<li>Atlassian Git Tutorials <a href="https://www.atlassian.com/git/tutorials" class="uri">https://www.atlassian.com/git/tutorials</a></li>
+<li>Software Carpentry, Version Control with Git <a href="https://swcarpentry.github.io/git-novice/" class="uri">https://swcarpentry.github.io/git-novice/</a></li>
+<li>Git documentation <a href="https://git-scm.com/docs" class="uri">https://git-scm.com/docs</a></li>
+</ul>
+</section>
+<section>
+<section id="commands" class="title-slide slide level1 center">
+<h1>Commands</h1>
+
+</section>
+<section id="setting-up-a-repository" class="slide level2">
+<h2>Setting up a repository</h2>
+</section>
+<section id="to-start-tracking" class="slide level2">
+<h2>To start tracking</h2>
 <ul>
 <li><code>git add</code>: to stage the changes</li>
 </ul>
@@ -514,8 +609,8 @@ Ray Yang
 <span id="cb2-2"><a href=""></a><span class="fu">git</span> add .     <span class="co"># stage new and modified files</span></span>
 <span id="cb2-3"><a href=""></a><span class="fu">git</span> add <span class="at">-u</span>    <span class="co"># stage modified and deleted files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="some-key-commands-1" class="slide level2">
-<h2>Some key commands</h2>
+<section id="to-stage-the-changes" class="slide level2">
+<h2>To stage the changes</h2>
 <ul>
 <li><code>git commit</code>: to commit the changes staged with <code>git add</code></li>
 </ul>
@@ -525,7 +620,7 @@ Ray Yang
 
 </div>
 </div>
-</section>
+</section></section>
 
     </div>
   </div>
