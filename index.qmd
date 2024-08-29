@@ -96,9 +96,9 @@ digraph B {
 - Software Carpentry, Version Control with Git <https://swcarpentry.github.io/git-novice/>
 - Git documentation  <https://git-scm.com/docs>
 
-## Have a look
+## Example
 
-[Preview](https://github.com/wexlergroup/FreeBird.jl){preview-link="true"}
+<https://github.com/wexlergroup/FreeBird.jl>
 
 # Commands
 
@@ -170,4 +170,10 @@ git add -u    # stage modified and deleted files
 - `git commit`: to commit the changes staged with `git add`
 ```bash
 git commit -m "some text for the commit message"
+```
+
+## To upload with the server
+- `git push`: to `push` your changes to the `origin`
+```bash
+git push
 ```
