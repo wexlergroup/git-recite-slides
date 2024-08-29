@@ -96,6 +96,10 @@ digraph B {
 - Software Carpentry, Version Control with Git <https://swcarpentry.github.io/git-novice/>
 - Git documentation  <https://git-scm.com/docs>
 
+## Have a look
+
+[Preview](https://github.com/wexlergroup/FreeBird.jl){preview-link="true"}
+
 # Commands
 
 ## Setting up a repository
@@ -126,8 +130,11 @@ git clone https://github.com/your_github_username/your_repo
 - `git pull`: you *pull* the updates from the server
 ```bash
 git pull
-```
+Already up to date.
+```  
 
+
+Always try `pull` before making any changes to stay up-to-date with the origin, and avoid *merge conflicts*.
 
 ## Inspecting a repository
 
