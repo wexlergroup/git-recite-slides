@@ -256,7 +256,11 @@ open an issue
 ask your question in IRC.
 >>>>>>> branch-a
 ```
+## Other concepts not covered here
 
+- Pull requests
+- Branches
+- Forks
 
 ## Take-home message
 - Version control is a powerful tool
