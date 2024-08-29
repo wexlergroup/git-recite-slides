@@ -30,24 +30,24 @@ Version control (also known as revision control, source control, and source code
 
 ## The components
 
-There are the local part and the serve part
+There are the local parts and the server part
 
 
-::: {#fig-simple}
+
 ```{dot}
 digraph {
   rankdir=LR;
   edge [ style=dashed ];
 
-  node [ fontname="Handlee" ];
+  // node [ fontname="Handlee" ];
   subgraph cluster_frontend {
     label="your laptop";
-    "local files" -> "local repo"
+    "local files" ->"staging area" -> "local repo";
   }
       
   subgraph cluster_backend {
     
-    label="the internet";
+    label="the internet (origin/remote)";
     "online repo";
   }
 
@@ -55,13 +55,24 @@ digraph {
   
 }
 ```
-This is a simple graphviz graph
-:::
+
 
 
 ## Some key commands
 
-- `git add`: to add a local file for tracking
+- `git add`: to stage the changes
 ```bash
 git add <file_name>
+```
+several options:
+```bash
+git add -A    # stage all changes: new, modified and deleted files
+git add .     # stage new and modified files
+git add -u    # stage modified and deleted files
+```
+
+## Some key commands
+- `git commit`: to commit the changes staged with `git add`
+```bash
+git commit -m "some text for the commit message"
 ```
