@@ -2,11 +2,16 @@
 title: "Basic Version Control with `Git`"
 subtitle: "<https://yangmr04.github.io/git-recite-slides/>"
 author: "Ray Yang"
-format: revealjs
-  # revealjs:
+format: #revealjs
+  revealjs:
     # logo: logo.png
     # footer: ""
+    slide-number: true
 ---
+
+## What is version control
+
+![“notFinal.doc” by Jorge Cham, <https://www.phdcomics.com>](https://swcarpentry.github.io/git-novice/fig/phd101212s.png)
 
 ## What is version control
 
