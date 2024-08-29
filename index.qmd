@@ -222,9 +222,33 @@ Changes to be committed:
    new file: hello.py
 
 git commit -m "added hello.py"
+[main 2342a93] added hello.py
+ 1 file changed, 1 insertion(+)
 
 git push
 ```
 
+## Something unexpected: *merge conflict*
+Merge conflicts occur when competing changes are made to the same line of a file.^[[Resolving a merge conflict using the command line](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)]
+It will block the `push` actions until the conflicts are resolved. A merge conflict looks like this:
+\  
+
+\  
+
+```zsh
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> branch-a
+```
+
+
 ## Take-home message
--
+- Version control is a powerful tool
+- It's a good practice for code development
+- It's essential for collaborative projects
+- It has great importance in scientific reproducibility
+
+Start using it, now!

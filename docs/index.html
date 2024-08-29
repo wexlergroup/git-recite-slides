@@ -449,15 +449,15 @@ Ray Yang
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97)">
 <title>A</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-97 604.78,-97 604.78,4 -4,4"></polygon>
-<g id="clust1" class="cluster">
-<title>cluster_frontend</title>
-<polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
-<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_backend</title>
 <polygon fill="none" stroke="black" points="427.28,-8 427.28,-85 600.78,-85 600.78,-8 427.28,-8"></polygon>
 <text text-anchor="middle" x="514.03" y="-68.4" font-family="Times,serif" font-size="14.00">The Internet (origin/remote)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_frontend</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
+<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
 </g>
 <!-- local files -->
 <g id="node1" class="node">
@@ -708,11 +708,31 @@ Ray Yang
 <span id="cb12-10"><a href=""></a>   <span class="ex">new</span> file: hello.py</span>
 <span id="cb12-11"><a href=""></a></span>
 <span id="cb12-12"><a href=""></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"added hello.py"</span></span>
-<span id="cb12-13"><a href=""></a></span>
-<span id="cb12-14"><a href=""></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-13"><a href=""></a><span class="ex">[main</span> 2342a93] added hello.py</span>
+<span id="cb12-14"><a href=""></a> <span class="ex">1</span> file changed, 1 insertion<span class="op">(+)</span></span>
+<span id="cb12-15"><a href=""></a></span>
+<span id="cb12-16"><a href=""></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+<section id="something-unexpected-merge-conflict" class="slide level2">
+<h2>Something unexpected: <em>merge conflict</em></h2>
+<p>Merge conflicts occur when competing changes are made to the same line of a file.<sup>1</sup> It will block the <code>push</code> actions until the conflicts are resolved. A merge conflict looks like this: &nbsp;</p>
+<p>&nbsp;</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb13-1"><a href=""></a><span class="ex">If</span> you have questions, please</span>
+<span id="cb13-2"><a href=""></a><span class="op">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> HEAD</span>
+<span id="cb13-3"><a href=""></a><span class="ex">open</span> an issue</span>
+<span id="cb13-4"><a href=""></a><span class="ex">=======</span></span>
+<span id="cb13-5"><a href=""></a><span class="ex">ask</span> your question in IRC.</span>
+<span id="cb13-6"><a href=""></a><span class="op">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> branch-a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">Resolving a merge conflict using the command line</a></p></li></ol></aside></section>
 <section id="take-home-message" class="slide level2">
 <h2>Take-home message</h2>
+<ul>
+<li>Version control is a powerful tool</li>
+<li>It’s a good practice for code development</li>
+<li>It’s essential for collaborative projects</li>
+<li>It has great importance in scientific reproducibility</li>
+</ul>
+<p>Start using it, now!</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
