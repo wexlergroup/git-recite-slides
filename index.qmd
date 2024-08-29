@@ -34,9 +34,9 @@ Version control (also known as revision control, source control, and source code
 
 ## The components
 
-There are the local parts and the server part. Typically, you interact with all parts through the command line interface (CLI), which contains a set of text-based instructions.
+There are the local parts and the server part. Typically, you interact with all parts through the **command line interface (CLI)**, which contains a set of text-based instructions.
 
-Nowadays, there are graphical user interfaces (GUIs) available for your convenience. Many integrated development environments (IDEs) also have integrated git functionalities, either built-in ot via plug-ins.
+Nowadays, there are **graphical user interfaces (GUIs)** available for your convenience. Many **integrated development environments (IDEs)** also have integrated git functionalities, either built-in ot via plug-ins.
 
 
 ## The direction of version control: `pull`
@@ -93,15 +93,15 @@ digraph B {
 ## An example repo using version control
 
 - FreeBird: a Julia package developed by Wexler Group
-
 <https://github.com/wexlergroup/FreeBird.jl>
 
 ## Quiz time!
 
-1. What is `FreeBird`? 
-2. Where is `FreeBird` hosted?
-3. 
-
+1. What is `wexlergroup/FreeBird.jl`? A server? A project? A software?
+2. Where is `wexlergroup/FreeBird.jl` hosted?
+3. When was the last change made?
+4. Are there any issues with `FreeBird`, or it is just simply the perfection😁?
+5. How many branches are there?
 
 
 ## Useful resources
@@ -127,6 +127,22 @@ git init <project directory>
 
 <span style="font-size:0.5em;"> - Directory: a "folder" equivalent in CLI</span>
 
+## Some configurations
+
+- `git config`
+
+Setting up for *every* repository on your computer  
+```zsh
+git config --global user.name "Mona Lisa"
+git config --global user.email "your_email@example.com"
+```
+
+Setting up for *a single* repository on your computer  
+```zsh
+git config user.name "Mona Lisa"
+git config user.email "your_email@example.com"
+```
+
 
 ## Cloning an existing repository
 
@@ -135,7 +151,7 @@ git init <project directory>
 git clone https://github.com/your_github_username/your_repo
 ```
 
-## To update a repo locally
+## To update a local repo
 
 - `git pull`: you *pull* the updates from the server
 ```zsh
@@ -188,5 +204,24 @@ git commit -m "some text for the commit message"
 ## To upload with the server
 - `git push`: to `push` your changes to the `origin`
 ```zsh
+git push
+```
+
+## Full example
+
+```zsh
+git pull
+Already up to date.
+
+git add hello.py
+
+git status
+On branch main
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+   new file: hello.py
+
+git commit -m "added hello.py"
+
 git push
 ```
