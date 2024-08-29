@@ -208,6 +208,16 @@ git commit -m "some text for the commit message"
 - `git push`: to `push` your changes to the `origin`
 ```zsh
 git push
+
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1002 bytes | 1002.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/yangmr04/git-recite-slides.git
+   5786288..efbbf37  main -> main
 ```
 
 ## Full example
