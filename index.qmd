@@ -225,3 +225,5 @@ git commit -m "added hello.py"
 
 git push
 ```
+
+## Take-home message
