@@ -1,6 +1,6 @@
 ---
 title: "Basic Version Control with `Git`"
-subtitle: "<https://yangmr04.github.io/git-recite-slides/>"
+subtitle: "<https://wexlergroup.github.io/git-recite-slides/>"
 author: "Ray Yang"
 format: #revealjs
   revealjs:
