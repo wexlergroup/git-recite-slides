@@ -21,10 +21,17 @@
     "text": "What is GitHub?\n\nit’s a platform/host/server…\nit’s free but NOT open source\nit’s owned by Microsoft since 2018\nthere are many others, e.g., Bitbucket, GitLab"
   },
   {
+    "objectID": "index.html#the-components",
+    "href": "index.html#the-components",
+    "title": "Basic Version Control with Git",
+    "section": "The components",
+    "text": "The components\nThere are the local part and the serve part\n\n\n\n\n\n\n\n\n\n\n\n\ncluster_frontend\n\nyour laptop\n\n\ncluster_backend\n\nthe internet\n\n\n\nlocal files\n\nlocal files\n\n\n\nlocal repo\n\nlocal repo\n\n\n\nlocal files-&gt;local repo\n\n\n\n\n\nonline repo\n\nonline repo\n\n\n\nlocal repo-&gt;online repo\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: This is a simple graphviz graph"
+  },
+  {
     "objectID": "index.html#some-key-commands",
     "href": "index.html#some-key-commands",
     "title": "Basic Version Control with Git",
     "section": "Some key commands",
-    "text": "Some key commands\n\ngit add\n\ngit add &lt;file_name&gt;"
+    "text": "Some key commands\n\ngit add: to add a local file for tracking\n\ngit add &lt;file_name&gt;"
   }
 ]

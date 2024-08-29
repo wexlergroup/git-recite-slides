@@ -61,7 +61,7 @@ This is a simple graphviz graph
 
 ## Some key commands
 
-- `git add`
+- `git add`: to add a local file for tracking
 ```bash
 git add <file_name>
 ```
