@@ -611,15 +611,24 @@ Ray Yang
 <h1>Commands</h1>
 
 </section>
+<section id="cloning-an-existing-repository" class="slide level2">
+<h2>Cloning an existing repository</h2>
+<ul>
+<li><code>git clone</code>: copy, or “clone” a repo from a server</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href=""></a><span class="fu">git</span> clone https://github.com/your_github_username/your_repo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>&nbsp;</p>
+<p>I recommend creating a new repo on GitHub then clone it, instead of initiating a repo locally then push. See <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Creating a new repository</a> page on GitHub.</p>
+</section>
 <section id="setting-up-a-repository" class="slide level2">
 <h2>Setting up a repository</h2>
 <ul>
 <li><code>git init</code>: tell git to set up version control</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href=""></a><span class="bu">cd</span> /path/to/your/existing/code </span>
-<span id="cb1-2"><a href=""></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href=""></a><span class="bu">cd</span> /path/to/your/existing/code </span>
+<span id="cb2-2"><a href=""></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Or, when outside a directory, use</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href=""></a><span class="fu">git</span> init <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href=""></a><span class="fu">git</span> init <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="font-size:0.5em;"> - Directory: a “folder” equivalent in CLI</span></p>
 </section>
 <section id="some-configurations" class="slide level2">
@@ -628,18 +637,11 @@ Ray Yang
 <li><code>git config</code></li>
 </ul>
 <p>Setting up for <em>every</em> repository on your computer</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href=""></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Mona Lisa"</span></span>
-<span id="cb3-2"><a href=""></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your_email@example.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href=""></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Mona Lisa"</span></span>
+<span id="cb4-2"><a href=""></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your_email@example.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Setting up for <em>a single</em> repository on your computer</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href=""></a><span class="fu">git</span> config user.name <span class="st">"Mona Lisa"</span></span>
-<span id="cb4-2"><a href=""></a><span class="fu">git</span> config user.email <span class="st">"your_email@example.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="cloning-an-existing-repository" class="slide level2">
-<h2>Cloning an existing repository</h2>
-<ul>
-<li><code>git clone</code>: copy, or “clone” a repo from a server</li>
-</ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href=""></a><span class="fu">git</span> clone https://github.com/your_github_username/your_repo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href=""></a><span class="fu">git</span> config user.name <span class="st">"Mona Lisa"</span></span>
+<span id="cb5-2"><a href=""></a><span class="fu">git</span> config user.email <span class="st">"your_email@example.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="to-update-a-local-repo" class="slide level2">
 <h2>To update a local repo</h2>

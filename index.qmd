@@ -112,6 +112,16 @@ digraph B {
 
 # Commands
 
+## Cloning an existing repository
+
+- `git clone`: copy, or "clone" a repo from a server
+```zsh
+git clone https://github.com/your_github_username/your_repo
+```
+\  
+
+I recommend creating a new repo on GitHub then clone it, instead of initiating a repo locally then push. See [Creating a new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) page on GitHub.
+
 ## Setting up a repository
 
 - `git init`: tell git to set up version control
@@ -143,13 +153,6 @@ git config user.name "Mona Lisa"
 git config user.email "your_email@example.com"
 ```
 
-
-## Cloning an existing repository
-
-- `git clone`: copy, or "clone" a repo from a server
-```zsh
-git clone https://github.com/your_github_username/your_repo
-```
 
 ## To update a local repo
 
