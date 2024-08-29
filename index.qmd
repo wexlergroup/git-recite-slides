@@ -90,15 +90,25 @@ digraph B {
 
 <span style="font-size:0.5em;">Repo: repository</span>
 
+## An example repo using version control
+
+- FreeBird: a Julia package developed by Wexler Group
+
+<https://github.com/wexlergroup/FreeBird.jl>
+
+## Quiz time!
+
+1. What is `FreeBird`? 
+2. Where is `FreeBird` hosted?
+3. 
+
+
+
 ## Useful resources
 
 - Atlassian Git Tutorials <https://www.atlassian.com/git/tutorials>
 - Software Carpentry, Version Control with Git <https://swcarpentry.github.io/git-novice/>
 - Git documentation  <https://git-scm.com/docs>
-
-## Example
-
-<https://github.com/wexlergroup/FreeBird.jl>
 
 # Commands
 
@@ -106,12 +116,12 @@ digraph B {
 
 - `git init`: tell git to set up version control
 
-```bash
+```zsh
 cd /path/to/your/existing/code 
 git init
 ```
 Or, when outside a directory, use
-```bash
+```zsh
 git init <project directory>
 ```
 
@@ -121,14 +131,14 @@ git init <project directory>
 ## Cloning an existing repository
 
 - `git clone`: copy, or "clone" a repo from a server
-```bash
+```zsh
 git clone https://github.com/your_github_username/your_repo
 ```
 
 ## To update a repo locally
 
 - `git pull`: you *pull* the updates from the server
-```bash
+```zsh
 git pull
 Already up to date.
 ```  
@@ -139,7 +149,7 @@ Always try `pull` before making any changes to stay up-to-date with the origin, 
 ## Inspecting a repository
 
 - `git status`: check the status of the current repo
-```bash
+```zsh
 git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -156,11 +166,11 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ## Start tracking
 
 - `git add`: to stage the changes
-```bash
+```zsh
 git add <file_name>
 ```
 several options:
-```bash
+```zsh
 git add -A    # stage all changes: new, modified and deleted files
 git add .     # stage new and modified files
 git add -u    # stage modified and deleted files
@@ -168,12 +178,15 @@ git add -u    # stage modified and deleted files
 
 ## To stage the changes
 - `git commit`: to commit the changes staged with `git add`
-```bash
+```zsh
 git commit -m "some text for the commit message"
+[main d7cf2e6] some text for the commit message
+ 2 files changed, 18 insertions(+), 5 deletions(-)
 ```
+
 
 ## To upload with the server
 - `git push`: to `push` your changes to the `origin`
-```bash
+```zsh
 git push
 ```

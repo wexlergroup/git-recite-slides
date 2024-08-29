@@ -449,15 +449,15 @@ Ray Yang
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97)">
 <title>A</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-97 604.78,-97 604.78,4 -4,4"></polygon>
-<g id="clust1" class="cluster">
-<title>cluster_frontend</title>
-<polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
-<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_backend</title>
 <polygon fill="none" stroke="black" points="427.28,-8 427.28,-85 600.78,-85 600.78,-8 427.28,-8"></polygon>
 <text text-anchor="middle" x="514.03" y="-68.4" font-family="Times,serif" font-size="14.00">The Internet (origin/remote)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_frontend</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
+<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
 </g>
 <!-- local files -->
 <g id="node1" class="node">
@@ -521,15 +521,15 @@ Ray Yang
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97)">
 <title>B</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-97 604.78,-97 604.78,4 -4,4"></polygon>
-<g id="clust1" class="cluster">
-<title>cluster_frontend</title>
-<polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
-<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_backend</title>
 <polygon fill="none" stroke="black" points="427.28,-8 427.28,-85 600.78,-85 600.78,-8 427.28,-8"></polygon>
 <text text-anchor="middle" x="514.03" y="-68.4" font-family="Times,serif" font-size="14.00">The Internet (origin/remote)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_frontend</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-85 407.28,-85 407.28,-8 8,-8"></polygon>
+<text text-anchor="middle" x="207.64" y="-68.4" font-family="Times,serif" font-size="14.00">Your Laptop</text>
 </g>
 <!-- local files -->
 <g id="node1" class="node">
@@ -582,6 +582,21 @@ Ray Yang
 </div>
 <p><span style="font-size:0.5em;">Repo: repository</span></p>
 </section>
+<section id="an-example-repo-using-version-control" class="slide level2">
+<h2>An example repo using version control</h2>
+<ul>
+<li>FreeBird: a Julia package developed by Wexler Group</li>
+</ul>
+<p><a href="https://github.com/wexlergroup/FreeBird.jl" class="uri">https://github.com/wexlergroup/FreeBird.jl</a></p>
+</section>
+<section id="quiz-time" class="slide level2">
+<h2>Quiz time!</h2>
+<ol type="1">
+<li>What is <code>FreeBird</code>?</li>
+<li>Where is <code>FreeBird</code> hosted?</li>
+<li></li>
+</ol>
+</section>
 <section id="useful-resources" class="slide level2">
 <h2>Useful resources</h2>
 <ul>
@@ -589,10 +604,6 @@ Ray Yang
 <li>Software Carpentry, Version Control with Git <a href="https://swcarpentry.github.io/git-novice/" class="uri">https://swcarpentry.github.io/git-novice/</a></li>
 <li>Git documentation <a href="https://git-scm.com/docs" class="uri">https://git-scm.com/docs</a></li>
 </ul>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-<p><a href="https://github.com/wexlergroup/FreeBird.jl" class="uri">https://github.com/wexlergroup/FreeBird.jl</a></p>
 </section>
 <section>
 <section id="commands" class="title-slide slide level1 center">
@@ -604,10 +615,10 @@ Ray Yang
 <ul>
 <li><code>git init</code>: tell git to set up version control</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="bu">cd</span> /path/to/your/existing/code </span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href=""></a><span class="bu">cd</span> /path/to/your/existing/code </span>
 <span id="cb1-2"><a href=""></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Or, when outside a directory, use</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="fu">git</span> init <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href=""></a><span class="fu">git</span> init <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="font-size:0.5em;"> - Directory: a “folder” equivalent in CLI</span></p>
 </section>
 <section id="cloning-an-existing-repository" class="slide level2">
@@ -615,14 +626,14 @@ Ray Yang
 <ul>
 <li><code>git clone</code>: copy, or “clone” a repo from a server</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="fu">git</span> clone https://github.com/your_github_username/your_repo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href=""></a><span class="fu">git</span> clone https://github.com/your_github_username/your_repo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="to-update-a-repo-locally" class="slide level2">
 <h2>To update a repo locally</h2>
 <ul>
 <li><code>git pull</code>: you <em>pull</em> the updates from the server</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="fu">git</span> pull</span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href=""></a><span class="fu">git</span> pull</span>
 <span id="cb4-2"><a href=""></a><span class="ex">Already</span> up to date.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Always try <code>pull</code> before making any changes to stay up-to-date with the origin, and avoid <em>merge conflicts</em>.</p>
 </section>
@@ -631,7 +642,7 @@ Ray Yang
 <ul>
 <li><code>git status</code>: check the status of the current repo</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="fu">git</span> status</span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href=""></a><span class="fu">git</span> status</span>
 <span id="cb5-2"><a href=""></a><span class="ex">On</span> branch main</span>
 <span id="cb5-3"><a href=""></a><span class="ex">Your</span> branch is up to date with <span class="st">'origin/main'</span>.</span>
 <span id="cb5-4"><a href=""></a></span>
@@ -641,16 +652,16 @@ Ray Yang
 <span id="cb5-8"><a href=""></a>        <span class="ex">modified:</span>   docs/index.html</span>
 <span id="cb5-9"><a href=""></a>        <span class="ex">modified:</span>   index.qmd</span>
 <span id="cb5-10"><a href=""></a></span>
-<span id="cb5-11"><a href=""></a><span class="ex">no</span> changes added to commit <span class="er">(</span><span class="ex">use</span> <span class="st">"git add"</span> and/or <span class="st">"git commit -a"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-11"><a href=""></a><span class="ex">no</span> changes added to commit <span class="op">(us</span>e <span class="st">"git add"</span> and/or <span class="st">"git commit -a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="start-tracking" class="slide level2">
 <h2>Start tracking</h2>
 <ul>
 <li><code>git add</code>: to stage the changes</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="fu">git</span> add <span class="op">&lt;</span>file_name<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb6-1"><a href=""></a><span class="fu">git</span> add <span class="op">&lt;</span>file_name<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>several options:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href=""></a><span class="fu">git</span> add <span class="at">-A</span>    <span class="co"># stage all changes: new, modified and deleted files</span></span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb7-1"><a href=""></a><span class="fu">git</span> add <span class="at">-A</span>    <span class="co"># stage all changes: new, modified and deleted files</span></span>
 <span id="cb7-2"><a href=""></a><span class="fu">git</span> add .     <span class="co"># stage new and modified files</span></span>
 <span id="cb7-3"><a href=""></a><span class="fu">git</span> add <span class="at">-u</span>    <span class="co"># stage modified and deleted files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -659,14 +670,16 @@ Ray Yang
 <ul>
 <li><code>git commit</code>: to commit the changes staged with <code>git add</code></li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href=""></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"some text for the commit message"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb8-1"><a href=""></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"some text for the commit message"</span></span>
+<span id="cb8-2"><a href=""></a><span class="ex">[main</span> d7cf2e6] some text for the commit message</span>
+<span id="cb8-3"><a href=""></a> <span class="ex">2</span> files changed, 18 insertions<span class="pp">(</span><span class="ss">+</span><span class="pp">)</span>, 5 deletions<span class="op">(-)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="to-upload-with-the-server" class="slide level2">
 <h2>To upload with the server</h2>
 <ul>
 <li><code>git push</code>: to <code>push</code> your changes to the <code>origin</code></li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href=""></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb9-1"><a href=""></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
